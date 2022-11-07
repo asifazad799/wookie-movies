@@ -1,0 +1,40 @@
+.generContainer {
+  width: 100%;
+}
+
+.moveiesContainer {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.generTitle {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.moveiesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  display: inline-block;
+  width: 260px;
+  height: 163px;
+  margin-right: 10px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 18px 49px rgb(0 0 0) inset;
+  border-radius: 5px;
+}
+
+.movieBackdrop {
+}
+
+.movieTitle {
+  position: absolute;
+  color: white;
+  top: -12px;
+  left: 9px;
+}

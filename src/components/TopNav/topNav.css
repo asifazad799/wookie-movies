@@ -3,6 +3,10 @@
   height: 100px;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  background: white;
+  z-index: 1;
+  top: 0;
 }
 .titleContainer {
   display: flex;
