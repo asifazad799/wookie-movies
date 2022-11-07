@@ -4,10 +4,11 @@ import "./gener.css";
 
 function Gener({ movies, title }) {
   console.log(movies, title, "ddfu");
-  let arr = new Array(14).fill(0);
+
   if (movies.length == 0) {
     return null;
   }
+
   return (
     <div className="generContainer">
       <p className="generTitle">{title}</p>

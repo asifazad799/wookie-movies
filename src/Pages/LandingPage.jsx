@@ -3,6 +3,7 @@ import Gener from "../components/Gener/Gener";
 import TopNav from "../components/TopNav/TopNav";
 import { getMovies } from "../apis/getMovies";
 import "./LandingPage.css";
+import cogoToast from "cogo-toast";
 
 function LandingPage() {
   const [movies, setMovies] = React.useState([]);
@@ -11,7 +12,9 @@ function LandingPage() {
     try {
       let response = await getMovies();
       setMovies(response.data.movies);
-    } catch (error) {}
+    } catch (error) {
+      cogoToast.error("Sorry error inloading movies");
+    }
   };
 
   React.useEffect(() => {
